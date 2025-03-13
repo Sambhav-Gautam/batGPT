@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/batGPT/static/css/main.936f33ee.css",
-    "main.js": "/batGPT/static/js/main.a06b1326.js",
+    "main.css": "/batGPT/static/css/main.d3986b30.css",
+    "main.js": "/batGPT/static/js/main.0b121de9.js",
     "static/js/453.7948e468.chunk.js": "/batGPT/static/js/453.7948e468.chunk.js",
     "index.html": "/batGPT/index.html",
-    "main.936f33ee.css.map": "/batGPT/static/css/main.936f33ee.css.map",
-    "main.a06b1326.js.map": "/batGPT/static/js/main.a06b1326.js.map",
+    "main.d3986b30.css.map": "/batGPT/static/css/main.d3986b30.css.map",
+    "main.0b121de9.js.map": "/batGPT/static/js/main.0b121de9.js.map",
     "453.7948e468.chunk.js.map": "/batGPT/static/js/453.7948e468.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.936f33ee.css",
-    "static/js/main.a06b1326.js"
+    "static/css/main.d3986b30.css",
+    "static/js/main.0b121de9.js"
   ]
 }
