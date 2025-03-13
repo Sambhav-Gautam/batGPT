@@ -1,0 +1,194 @@
+/* Global base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #f7f7f7;
+}
+
+/* App container */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f7f7f7;
+}
+
+/* Header styles */
+.App-header {
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Container for header buttons */
+.header-buttons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.header-buttons button {
+  background: #fff;
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.header-buttons button:hover {
+  background: #ddd;
+}
+
+/* Chat container styles */
+.chat-container {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 120px; /* extra space to account for fixed input */
+}
+
+/* Chat message styles */
+.message {
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 20px;
+  max-width: 70%;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.message.user {
+  background-color: #e6f7ff;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.message.bot {
+  background-color: #fff9e6;
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+/* Fixed input container */
+.input-container,
+.sleepy-message {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  background: #fff;
+  border-top: 1px solid #eee;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-container input:focus {
+  border-color: #007bff;
+}
+
+.input-container button {
+  margin-left: 15px;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 30px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.input-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Sleepy message specific styles */
+.sleepy-message {
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #777;
+}
+
+/* Footer for non-commercial notice */
+.footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Cave mode (dark mode) styles */
+.cave-mode {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+.cave-mode .App-header {
+  background: linear-gradient(135deg, #1a1a1a, #333);
+}
+
+.cave-mode .header-buttons button {
+  background: #333;
+  color: #e0e0e0;
+}
+
+.cave-mode .chat-container {
+  background: #121212;
+}
+
+.cave-mode .message.user {
+  background-color: #2a2a2a;
+}
+
+.cave-mode .message.bot {
+  background-color: #333;
+}
+
+.cave-mode .input-container,
+.cave-mode .sleepy-message {
+  background: #1a1a1a;
+  border-top: 1px solid #333;
+}
+
+.cave-mode .input-container input {
+  background: #2a2a2a;
+  color: #e0e0e0;
+  border: 1px solid #555;
+}
+
+.cave-mode .input-container button {
+  background-color: #555;
+}
